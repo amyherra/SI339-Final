@@ -76,6 +76,31 @@ a:hover, a:focus {
     align-items: center;
 }
 
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.work-meta, .work-farm, .work-tpa, .work-google,
+.work-lacasa, .work-mlt, .work-colorstack, .work-hsf,
+.work-gwc {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.work-meta img, .work-farm img, .work-tpa img,
+.work-google img, .work-lacasa img, .work-mlt img,
+.work-colorstack img, .work-hsf img, .work-gwc img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    grid-template-columns: 1fr;
+  }
+}
 .home-imgs img {
     width: 150px;
     height: 150px;
